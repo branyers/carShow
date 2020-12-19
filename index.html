@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body> 
+    <h1 class="center">Car Show</h1>
+    <div class="container mt-5">
+        <div class="card bg-blue">
+            <div class="card-body">
+                <form id="form-cars" onsubmit="event.preventDefault(), addCars()" action="/users.php">
+                <div class="row">
+                    <div class="col">
+                      <div class="form-outline">
+                        <input type="text" id="brand" class="form-control" placeholder="Brand" />
+                        <label class="form-label" for="form8Example2">Brand</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <hr />
+                  
+                  <div class="row">
+                    <div class="col">
+                      <!-- Name input -->
+                      <div class="form-outline">
+                        <input type="text" id="model" class="form-control" placeholder="Model" />
+                        <label class="form-label" for="form8Example3">Model</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <!-- Name input -->
+                      <div class="form-outline">
+                        <input type="text" id="year" class="form-control" placeholder="Year" />
+                        <label class="form-label" for="form8Example4">Year</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <!-- Email input -->
+                      <div class="form-outline">
+                        <input type="text" id="color" class="form-control" placeholder="Color" />
+                        <label class="form-label" for="form8Example5">Color</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <!-- Email input -->
+                        <div class="form-outline">
+                          <input type="text" id="image" class="form-control" placeholder="Url Images" />
+                          <label class="form-label" for="form8Example5">Image</label>
+                        </div>
+                      </div>
+
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                  <table class="table table-image">
+                    <thead>
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Models</th>
+                        <th scope="col">Years</th>
+                        <th scope="col">Colors</th>
+                        <th scope="col">Options</th>
+                      </tr>
+                    </thead>
+                    <tbody id="data.cars">
+                      
+                    </tbody>
+                  </table>   
+              </div>
+            </div>
+          </div>
+
+      <script src="coches.js"></script>
+</body>
+</html>
